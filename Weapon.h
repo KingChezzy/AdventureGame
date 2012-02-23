@@ -6,12 +6,12 @@ A class for the weapons used in the game
 
 #include <iostream>
 
-class Weapons
+class Weapon
 {
 	public:
 		//Declarations
-		Weapons();				//Constructor
-		~Weapons();				//Destructor
+		Weapon();				//Constructor
+		~Weapon();				//Destructor
 
 		void SetName( char* name );
 		void SetMaxAttack( int& max );

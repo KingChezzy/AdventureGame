@@ -13,7 +13,7 @@ class Armor
 		~Armor();				//Destructor
 
 		void SetStrength( int& str );
-		void SetHealthBoost( &int plusHP );
+		void SetHealthBoost( int& plusHP );
 
 		//Accessors
 		char* GetName();
