@@ -1,6 +1,3 @@
 A simple text-based adventure game to help practice collaborative programming.
-I have edited this
-Second Change
 
-Change made by Joe. Testing whether you can properly pull from main repo. :)
-Another change, testing branching.
+The game will involve simple text-command controlled battles with various enemies.
