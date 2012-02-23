@@ -22,8 +22,6 @@ class Weapon
 		float Roll();
 		float CriticalHit();
 
-		int Roll();
-
 		//Accessors
 		int GetMaxAttack();			//Returns Max Damage
 		int GetMinAttack();			//Returns Min Damage
