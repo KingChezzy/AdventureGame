@@ -5,12 +5,13 @@ A class for the weapons used in the game
 #define _WEAPON_H_
 
 #include <iostream>
+#include "Random.h"
 
 class Weapon
 {
 	public:
 		//Declarations
-		Weapon();				//Constructor
+		Weapon( char* name, int& max, int& min, int& chc, float& chm);				//Constructor
 		~Weapon();				//Destructor
 
 		void SetName( char* name );
@@ -18,6 +19,8 @@ class Weapon
 		void SetMinAttack( int& min );
 		void SetCritChance( int& chc );
 		void SetCritMult( float& chm );
+		float Roll();
+		float CriticalHit();
 
 		int Roll();
 
