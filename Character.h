@@ -4,14 +4,7 @@
 #ifndef _CHARACTER_H_
 #define _CHARACTER_H_
 
-//#include "Weapon.h"
-// Temporary prototype
-
-class Weapon
-{
-public:
-	int Roll() { return 0; }
-};
+#include "Weapon.h"
 
 class Character
 {

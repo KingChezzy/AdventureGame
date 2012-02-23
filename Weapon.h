@@ -19,6 +19,8 @@ class Weapon
 		void SetCritChance( int& chc );
 		void SetCritMult( float& chm );
 
+		int Roll();
+
 		//Accessors
 		int GetMaxAttack();			//Returns Max Damage
 		int GetMinAttack();			//Returns Min Damage
