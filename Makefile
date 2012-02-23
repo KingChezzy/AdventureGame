@@ -5,7 +5,7 @@ CFLAGS=-c
 # Linker flags
 LDFLAGS=
 # Source files to include
-SOURCES=main.cpp Game.h Character.h Character.cpp Weapon.h Armor.h Random.h Random.cpp
+SOURCES=main.cpp Game.h Character.h Character.cpp Weapon.h Weapon.cpp Armor.h Random.h Random.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=game
 
