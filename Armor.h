@@ -8,12 +8,12 @@ class Armor
 {
 	public:
 		//Declarations
-		Armor();				//Constructor
-		Armor( char* name, int& str, int& plusHP);
-		~Armor();				//Destructor
+		Armor( char* name, int& str, int& plusHP); //Constructor
+		~Armor();									//Destructor
 
 		void SetStrength( int& str );
 		void SetHealthBoost( int& plusHP );
+		void SetName( char* name );
 
 		//Accessors
 		char* GetName();
