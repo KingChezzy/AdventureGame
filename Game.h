@@ -6,5 +6,7 @@
 #define _GAME_H_
 
 #include "Character.h"
+#include "Weapon.h"
+#include "Armor.h"
 
 #endif
