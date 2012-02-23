@@ -1,6 +1,6 @@
-/*
-A class for the weapons used in the game
-*/
+/* Weapon.h
+ * A class for the weapons used in the game
+ */
 #ifndef _WEAPON_H_
 #define _WEAPON_H_
 
@@ -10,32 +10,32 @@ A class for the weapons used in the game
 class Weapon
 {
 	public:
-		//Declarations
-		Weapon( char* name, int& max, int& min, int& chc, float& chm);				//Constructor
-		~Weapon();				//Destructor
+		Weapon( char* name, int& max, int& min, int& chc, float& chm);	//Constructor
+		~Weapon();							//Destructor
 
-		void SetName( char* name );
-		void SetMaxAttack( int& max );
-		void SetMinAttack( int& min );
-		void SetCritChance( int& chc );
-		void SetCritMult( float& chm );
-		int Roll();
-		float CriticalHit();
+		/*----------------------- ACCESSORS -----------------------*/ 
+		void SetName( char* name );	// Set the Weapon's name
+		void SetMaxAttack( int& max );	// Set the weapon's maximum attack value
+		void SetMinAttack( int& min );  // Set the weapon's minimum attack value
+		void SetCritChance( int& chc );	// Set the weapon's critical hit chance
+		void SetCritMult( float& chm );	// Set the weapon's critical hit multiplier
 
-		//Accessors
-		int GetMaxAttack();			//Returns Max Damage
-		int GetMinAttack();			//Returns Min Damage
+		int GetMaxAttack();		//Returns Max Damage
+		int GetMinAttack();		//Returns Min Damage
 		int GetCriticalHitChance();	//Returns the crit hit chance
-		float GetMultiplyer();		//Returns Crit hit multiplyer
+		float GetMultiplier();		//Returns Crit hit multiplyer
 
+		/*-----------------------  COMBAT   -----------------------*/ 
+		int Roll();			// Roll the weapon's attack damage
+		float CriticalHit();		// Roll for the weapon's critical hit damage
 	private:
 		char* m_Name;			//Name of the weapon
 
 		int m_MaxAttack;		// The max base damage of a hit
 		int m_MinAttack;		// The min base damage of a hit
 
-		int m_CriticalHitChance;		//The ratio of 1:i that a critical hit will be possible
-		float m_CriticalHitMultiplyer;	//Multiplied onto the final damage when CritHitChance succeeds
+		int m_CriticalHitChance;	//The ratio of 1:i that a critical hit will be possible
+		float m_CriticalHitMultiplier;	//Multiplied onto the final damage when CritHitChance succeeds
 };
 
 #endif

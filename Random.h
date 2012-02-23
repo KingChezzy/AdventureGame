@@ -8,6 +8,9 @@
 #include<cstdlib>
 #include<ctime>
 
+/* Random
+ * Returns a random number between the inclusive minimum and exclusive maximum.
+ */
 int Random( int max, int min = 0 );
 // Consider overloaded for other types
 

@@ -10,7 +10,7 @@ Weapon::Weapon( char* name, int& max, int& min, int& chc, float& chm)
 	this->m_MaxAttack = max;
 	this->m_MinAttack = min;
 	this->m_CriticalHitChance = chc;
-	this->m_CriticalHitMultiplyer = chm;
+	this->m_CriticalHitMultiplier = chm;
 }
 
 int Weapon::GetMaxAttack()
@@ -28,9 +28,9 @@ int Weapon::GetCriticalHitChance()
 	return this->m_CriticalHitChance;
 }
 
-float Weapon::GetMultiplyer()
+float Weapon::GetMultiplier()
 {
-	return this->m_CriticalHitMultiplyer;
+	return this->m_CriticalHitMultiplier;
 }
 
 int Weapon::Roll()
@@ -42,7 +42,7 @@ float Weapon::CriticalHit()
 {
 	if ( Random( this->m_CriticalHitChance, 0) == 10)
 	{
-		return this->m_CriticalHitMultiplyer;
+		return this->m_CriticalHitMultiplier;
 	}
 	else return 1.0f;
 }
@@ -54,7 +54,7 @@ void Weapon::SetCritChance( int& chc )
 
 void Weapon::SetCritMult( float& chm )
 {
-	this->m_CriticalHitMultiplyer = chm;
+	this->m_CriticalHitMultiplier = chm;
 }
 
 void Weapon::SetMaxAttack( int& max)
