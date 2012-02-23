@@ -14,24 +14,26 @@ public:
 	Character( char* name, int& maxHp );
 
 	/*-------------------- ACCESSORS --------------------*/ 
-	char* GetName();		// Get the character's name
-	int GetHealth();		// Get the character's current health
-	int GetMaxHealth();		// Get the character's maximum health
+	char* GetName();			// Get the character's name
+	int GetHealth();			// Get the character's current health
+	int GetMaxHealth();			// Get the character's maximum health
 	Weapon* GetWeapon();		// Retreive a pointer to the character's active weapon
-	Armor* GetArmor();		// Retreive a pointer to the character's active armor
+	Armor* GetArmor();			// Retreive a pointer to the character's active armor
 
 	void SetHealth( int& hp );	// Set the character's health
 	void ModHealth( int& hp );	// Modify the character's health (added to it's current health)
-	void SetMaxHealth( int& hp );	// Set the character's maximum health
+	void SetMaxHealth( int& hp );// Set the character's maximum health
+	void SetWeapon( char* name, int& max, int& min, int& chc, float& chm );
+	void SetArmor( char* name, int& str, int& plusHP );
 
 	/*--------------------   COMBAT  --------------------*/ 
-	int AttackRoll();		// Calculate's a damage value for the character to "hit" at
-	bool IsAlive();			// Determine's whether the character is Still Alive (health > 0)
+	int AttackRoll();			// Calculate's a damage value for the character to "hit" at
+	bool IsAlive();				// Determine's whether the character is Still Alive (health > 0)
 	
 protected:
-	char* m_Name;			// Character's name
-	int m_Health;			// Character's current health
-	int m_MaxHealth;		// Character's maximum health
+	char* m_Name;				// Character's name
+	int m_Health;				// Character's current health
+	int m_MaxHealth;			// Character's maximum health
 	Weapon* m_ActiveWeapon;		// Character's current active weapon
 	Armor* m_ActiveArmor;		// Character's current active armor
 

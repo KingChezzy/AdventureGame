@@ -64,3 +64,13 @@ void Character::CapHealth()
 		this->m_Health = this->m_MaxHealth;
 	}
 }
+
+void Character::SetWeapon( char* name, int& max, int& min, int& chc, float& chm )
+{
+	this->m_ActiveWeapon = new Weapon( name, max, min, chc, chm );
+}
+
+void Character::SetArmor( char* name, int& str, int& plusHP )
+{
+	this->m_ActiveArmor = new Armor( name, str, plusHP );
+}
