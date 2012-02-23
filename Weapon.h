@@ -19,7 +19,7 @@ class Weapon
 		void SetMinAttack( int& min );
 		void SetCritChance( int& chc );
 		void SetCritMult( float& chm );
-		float Roll();
+		int Roll();
 		float CriticalHit();
 
 		//Accessors
